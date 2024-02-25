@@ -1,0 +1,50 @@
+CLINIC LIST:
+
+------------------------------------
+Firstname: Elsa       
+Lastname:  Agnarrsdottir
+Age:       20 years
+Condition: Esotropia
+------------------------------------
+Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
+------------------------------------
+------------------------------------
+Firstname: Ana        
+Lastname:  Agnarrsdottir
+Age:       18 years
+Condition: Esotropia
+------------------------------------
+Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
+------------------------------------
+------------------------------------
+Firstname: Olaf       
+Lastname:  Snowsson
+Age:       3 years
+Condition: Optic nerve hypoplasia
+------------------------------------
+Posterior segment patient. Investigations: VA--Orthoptics--Dilate--OCT--OPTOS--Doctor
+------------------------------------
+------------------------------------
+Firstname: Kristoff   
+Lastname:  Hansson
+Age:       22 years
+Condition: Arc eye
+------------------------------------
+Anterior segment patient. Investigations: VA--Doctor
+------------------------------------
+------------------------------------
+Firstname: Mirabel    
+Lastname:  Madrigal
+Age:       14 years
+Condition: Myopia
+------------------------------------
+Refractive patient. Investigations: VA--Orthoptics--Refraction
+------------------------------------
+------------------------------------
+Firstname: Dory       
+Lastname:  Fisherton
+Age:       47 years
+Condition: Exotropia
+------------------------------------
+Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
+------------------------------------
