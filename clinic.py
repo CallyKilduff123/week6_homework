@@ -1,4 +1,10 @@
-# create class called Patient - List is the capsule within which all the patients details sit
+# OLD CODE  - iteration 1
+# created the class patient
+# tried to use input to assign category to each patient but i had to enter the category before the patient populated
+# could try user inputting all of the patient details including category
+
+# created List class
+# had method to add patients
 
 class Patient:
     def __init__(self, firstname, lastname, age, condition):
@@ -42,10 +48,6 @@ class List:
         self.patients.append(new_patient)
         print(f"{new_patient}")
 
-    # def remove_patients(self, firstname, lastname, age, condition):
-    #     removed_patient = Patient(firstname, lastname, age, condition)
-    #     self.patients.remove(removed_patient)
-    #     print(f"Patient: {firstname} {lastname} did not attend")
 
     def get_patient_list(self):
         return self.patients

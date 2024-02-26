@@ -1,4 +1,9 @@
-
+# # OLD CODE  - iteration 3
+# created the class called investigations and the dictionary
+# did not have inheritence between investigations and patient classes
+# so had to type out to fetch investigations for each patient - not done automatically
+# added remove patient method to the List class - wasn't working
+#
 class Patient:
     def __init__(self, firstname, lastname, age, condition):
         self.firstname = firstname

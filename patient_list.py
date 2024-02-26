@@ -1,5 +1,5 @@
-from clinic4 import List
-from clinic4 import Investigations
+from clinic5 import List
+from clinic5 import Investigations
 
 clinic = List()
 investigation = Investigations()

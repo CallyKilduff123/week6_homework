@@ -14,7 +14,7 @@ class Patient:
     def health_message(self):
         bmi = self.calculate_bmi()
         if bmi < 20:
-            return f"{self.name} is underweight. Offer health visitor appoitnment"
+            return f"{self.name} is underweight. Offer health visitor appointment"
         elif bmi <= 25:
             return f"{self.name} has a healthy weight."
         elif bmi <= 30:

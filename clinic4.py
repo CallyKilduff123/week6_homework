@@ -1,4 +1,12 @@
+# # OLD CODE  - iteration 4
+# built on remove method in iteration 3 and made investigations the base class
+# added category key as a parameter for the patient class
+# tried the remove patient method
+# it didn't write to the patient list
+
 # TODO - create a clinic list
+
+# iteration 4 -
 
 # create a clinic list
 # add patients
@@ -103,13 +111,13 @@ class List:
         print(f"{new_patient}")
 
     def remove_patients(self, firstname, lastname):
-        removed = False  # Flag to check if a patient was removed
+        found = False  # boolean to check if a patient was removed
         for person in self.patients[:]:  # Iterate over a copy of the list to remove from the original list
             if person.firstname == firstname and person.lastname == lastname:
                 self.patients.remove(person)
                 print(f"DNA {person.firstname} {person.lastname}: unable to attend appointment.")
-                removed = True
-        if not removed:
+                found = True
+        if not found:
             print(f"No patient found with the name: {firstname} {lastname}.")
 
     # def remove_patients(self, firstname, lastname):
@@ -125,30 +133,30 @@ class List:
         return self.patients
 
 
-if __name__ == "__main__":
-    clinic = List()
-    investigation = Investigations()
-
-    # Example of adding a patient with a category key
-    clinic.add_patients("Elsa", "Agnarrsdottir", 20, "Esotropia", 'S')
-    clinic.add_patients("Ana", "Agnarrsdottir", 18, "Esotropia", "S")
-    clinic.add_patients("Olaf", "Snowsson", 3, "Optic nerve hypoplasia", "P")
-    clinic.add_patients("Kristoff", "Hansson", 22, "Arc eye", "A")
-    clinic.add_patients("Mirabel", "Madrigal", 14, "Myopia", "R")
-    clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
-    clinic.remove_patients("Dory", "Fisherton")
-    clinic.get_patient_list()
-
-    # add patients to txt file
-
-    with open("patients_list.txt", "w") as file:
-        file.write('CLINIC LIST:\n\n')
-        for patient in clinic.patients:
-            # Write patient details
-            file.write(str(patient) + "\n")
-            # Write investigation details for the patient's category
-            investigation_details = investigation.get_category(patient.category_key)
-            file.write(investigation_details + "\n------------------------------------\n")
+# if __name__ == "__main__":
+#     clinic = List()
+#     investigation = Investigations()
+#
+#     # Example of adding a patient with a category key
+#     clinic.add_patients("Elsa", "Agnarrsdottir", 20, "Esotropia", 'S')
+#     clinic.add_patients("Ana", "Agnarrsdottir", 18, "Esotropia", "S")
+#     clinic.add_patients("Olaf", "Snowsson", 3, "Optic nerve hypoplasia", "P")
+#     clinic.add_patients("Kristoff", "Hansson", 22, "Arc eye", "A")
+#     clinic.add_patients("Mirabel", "Madrigal", 14, "Myopia", "R")
+#     clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
+#     clinic.remove_patients("Dory", "Fisherton")
+#     clinic.get_patient_list()
+#
+#     # add patients to txt file
+#
+#     with open("patients_list.txt", "w") as file:
+#         file.write('CLINIC LIST:\n\n')
+#         for patient in clinic.patients:
+#             # Write patient details
+#             file.write(str(patient) + "\n")
+#             # Write investigation details for the patient's category
+#             investigation_details = investigation.get_category(patient.category_key)
+#             file.write(investigation_details + "\n------------------------------------\n")
 
 
 

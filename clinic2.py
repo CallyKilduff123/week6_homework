@@ -1,3 +1,6 @@
+# # OLD CODE  - iteration 2
+# formatted the output for the class Patient
+# left category out
 
 class Patient:
     def __init__(self, firstname, lastname, age, condition):
