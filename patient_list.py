@@ -1,5 +1,5 @@
-from clinic6 import List
-from clinic6 import Patient
+from clinic7 import List
+from clinic7 import Patient
 
 clinic = List(firstname=(), lastname=(), age=(), condition=(), category_key=())
 patient = Patient(firstname=(), lastname=(), age=(), condition=(), category_key=())

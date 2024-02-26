@@ -1,5 +1,5 @@
-# iteration 6 - current iteration
-# incorporated investigations into patient class - simplified code and output
+# iteration 7 - current iteration
+# did not inherit patient to list - kept seperate
 
 
 # TODO - create a clinic list
@@ -73,23 +73,26 @@ class Patient:
 # create final class called list - this inherits from the Patient class
 # acts as a container for storing patient information.
 # designed to hold multiple patient records
-# initialise and don't pass any variables because creating a list - this list will be used to store the patient records.
-class List(Patient):
-    def __init__(self, firstname, lastname, age, condition, category_key):
-        super().__init__(firstname, lastname, age, condition, category_key)
+# initialise and don't pass any variables because creating a list - this list will be used to store the patient records
+
+# dont inherit Patient class in List class
+# a list of patients (a collection) doesn't have an "is-a" relationship with a single patient but rather has patients..
+# Instead of inheriting from Patient, create a separate class to manage the collection of patients.
+# This class will use composition by containing a list of Patient instances
+# they now have individual responsibilities—Patient for storing individual patient data
+# List for managing the collection of patients.
+class List:
+    def __init__(self):
         self.patients = []
 
-    # add patients method - used to add new patient records to the list.
-    # The parameters represent the details of a patient that need to be provided
-    # pass the data required for entry into the parameters
     def add_patients(self, firstname, lastname, age, condition, category_key):
-        # new_patient... line creates a new instance of the Patient class, using the provided patient details.
-        # This Patient instance represents one patient's record.
         new_patient = Patient(firstname, lastname, age, condition, category_key)
-        # append adds the newly created Patient instance to the self.patients list,
-        #  storing the patient's record in the list managed by the List class instance.
         self.patients.append(new_patient)
         print(f"{new_patient}")
+
+    def get_patients(self):
+        for person in self.patients:
+            print(person)
 
     # The method's purpose is to remove a patient based on their first name and last name
     # (not entering all the other fields)
@@ -123,7 +126,6 @@ class List(Patient):
             with open("patients_list.txt", "a") as file:
                 file.write(f"{firstname} {lastname} not found in the patient list.\n")
 
-
     # method to get the patient list and return the list of patients
     # i don't actually use this in this example
     def get_patient_list(self):
@@ -134,7 +136,7 @@ class List(Patient):
 if __name__ == "__main__":
     # import List and investigations classes
 
-    clinic = List(firstname=(), lastname=(), age=(), condition=(), category_key=())
+    clinic = List()
     patient = Patient(firstname=(), lastname=(), age=(), condition=(), category_key=())
 
     # add patients to the list with a category key for their investigations

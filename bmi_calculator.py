@@ -23,7 +23,7 @@ class Patient:
             return f"{self.name} is obese. Offer telephone appointment"
 
     def __str__(self):
-        return (f"{self.name}\nAge: {self.age}\nCondition: {self.condition}\nBMI: {self.bmi:.0f}\n"
+        return (f"Name: {self.name}\nAge: {self.age}\nCondition: {self.condition}\nBMI: {self.bmi:.0f}\n"
                 "************************************************************\n"
                 f"Health alert: {self.health_message()}\n"
                 "************************************************************\n")
