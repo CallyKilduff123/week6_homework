@@ -7,8 +7,6 @@ class Patient:
         self.height_m = height_m
         self.bmi = self.calculate_bmi()
 
-
-
     def calculate_bmi(self):
         bmi = self.weight_kg / (self.height_m ** 2)
         return bmi

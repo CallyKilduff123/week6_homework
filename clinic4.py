@@ -139,7 +139,7 @@ if __name__ == "__main__":
     clinic.remove_patients("Dory", "Fisherton")
     clinic.get_patient_list()
 
-    # Continue adding patients as before, including the category_key in the arguments
+    # add patients to txt file
 
     with open("patients_list.txt", "w") as file:
         file.write('CLINIC LIST:\n\n')

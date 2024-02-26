@@ -139,19 +139,25 @@ if __name__ == "__main__":
     clinic.add_patients("Kristoff", "Hansson", 22, "Arc eye", "A")
     clinic.add_patients("Mirabel", "Madrigal", 14, "Myopia", "R")
 
-
     # remove a patient from the list using their name only
     clinic.remove_patients("Dory", "Fisherton")
     # clinic.get_patient_list()
 
-    # Continue adding patients as before, including the category_key in the arguments
-
+    # write the list to the txt file
+    # with scoops everything up and closes file at the end
+    # open the file to write or overwrite
+    # write the title for the clinic
+    # iterate over each patient in the clinic list
+    # write their details as a string separated as a line
+    # add the investigation details based on the key provided
     with open("patients_list.txt", "w") as file:
         file.write('CLINIC LIST:\n\n')
         for patient in clinic.patients:
             # Write patient details
             file.write(str(patient) + "\n")
-            # Write investigation details for the patient's category
+            # Write investigations required for the patient's category
+            # for each patient fetch the category key and then get the matching investigation value
+            # then write to the file
             investigation_details = investigation.get_category(patient.category_key)
             file.write(investigation_details + "\n------------------------------------\n")
 
