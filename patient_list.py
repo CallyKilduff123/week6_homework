@@ -1,8 +1,8 @@
-from clinic5 import List
-from clinic5 import Investigations
+from clinic6 import List
+from clinic6 import Patient
 
-clinic = List()
-investigation = Investigations()
+clinic = List(firstname=(), lastname=(), age=(), condition=(), category_key=())
+patient = Patient(firstname=(), lastname=(), age=(), condition=(), category_key=())
 
 # add patients to the list with a category key for their investigations
 clinic.add_patients("Elsa", "Agnarrsdottir", 20, "Esotropia", 'S')
@@ -23,8 +23,6 @@ with open("patients_list.txt", "w") as file:
     for patient in clinic.patients:
         # Write patient details
         file.write(str(patient) + "\n")
-        # Write investigation details for the patient's category
-        investigation_details = investigation.get_category(patient.category_key)
-        file.write(investigation_details + "\n------------------------------------\n")
+
 
 #
