@@ -103,23 +103,25 @@ class List:
         print(f"{new_patient}")
 
     def remove_patients(self, firstname, lastname):
-        removed = False  # Flag to check if a patient was removed
-        for person in self.patients[:]:  # Iterate over a copy of the list to remove from the original list
+        found = False
+        for person in self.patients:
             if person.firstname == firstname and person.lastname == lastname:
+                found = True
                 self.patients.remove(person)
-                print(f"DNA {person.firstname} {person.lastname}: unable to attend appointment.")
-                removed = True
-        if not removed:
-            print(f"No patient found with the name: {firstname} {lastname}.")
+                with open("patients_list.txt", "a") as file:
+                    file.write(f"DNA {person.firstname} {person.lastname}: unable to attend appointment.\n")
+                break
+        if not found:
+            with open("patients_list.txt", "a") as file:
+                file.write(f"{firstname} {lastname} not found in the patient list.\n")
 
     # def remove_patients(self, firstname, lastname):
-    #     for person in self.patients[:]:
+    #     for person in self.patients:
     #         if person.firstname == firstname and person.lastname == lastname:
     #             self.patients.remove(person)
-    #         return person
-                # print(f"DNA {person.firstname} {person.lastname}: unable to attend appointment.")
-            # else:
-            #     print("Patient not found")
+    #             with open("patients_list.txt", "a") as file:
+    #                 file.write(f"DNA {person.firstname} {person.lastname}: unable to attend appointment.\n")
+    #             break
 
     def get_patient_list(self):
         return self.patients
@@ -129,15 +131,18 @@ if __name__ == "__main__":
     clinic = List()
     investigation = Investigations()
 
-    # Example of adding a patient with a category key
+    # add patients to the list with a category key for their investigations
     clinic.add_patients("Elsa", "Agnarrsdottir", 20, "Esotropia", 'S')
     clinic.add_patients("Ana", "Agnarrsdottir", 18, "Esotropia", "S")
     clinic.add_patients("Olaf", "Snowsson", 3, "Optic nerve hypoplasia", "P")
+    clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
     clinic.add_patients("Kristoff", "Hansson", 22, "Arc eye", "A")
     clinic.add_patients("Mirabel", "Madrigal", 14, "Myopia", "R")
-    clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
+
+
+    # remove a patient from the list using their name only
     clinic.remove_patients("Dory", "Fisherton")
-    clinic.get_patient_list()
+    # clinic.get_patient_list()
 
     # Continue adding patients as before, including the category_key in the arguments
 

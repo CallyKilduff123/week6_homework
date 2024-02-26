@@ -4,13 +4,15 @@ from clinic4 import Investigations
 clinic = List()
 investigation = Investigations()
 
-# Example of adding a patient with a category key
+# add patients to the list with a category key for their investigations
 clinic.add_patients("Elsa", "Agnarrsdottir", 20, "Esotropia", 'S')
 clinic.add_patients("Ana", "Agnarrsdottir", 18, "Esotropia", "S")
 clinic.add_patients("Olaf", "Snowsson", 3, "Optic nerve hypoplasia", "P")
 clinic.add_patients("Kristoff", "Hansson", 22, "Arc eye", "A")
 clinic.add_patients("Mirabel", "Madrigal", 14, "Myopia", "R")
 clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
+
+# remove a patient from the list using their name only
 clinic.remove_patients("Dory", "Fisherton")
 clinic.get_patient_list()
 
