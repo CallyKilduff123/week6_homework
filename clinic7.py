@@ -104,9 +104,6 @@ class List:
         self.patients.append(new_patient)
         print(f"{new_patient}")
 
-    def get_patients(self):
-        for person in self.patients:
-            print(person)
 
     # The method's purpose is to remove a patient based on their first name and last name
     # (not entering all the other fields)
@@ -140,11 +137,12 @@ class List:
             with open("patients_list.txt", "a") as file:
                 file.write(f"{firstname} {lastname} not found in the patient list.\n")
 
-    # method to get the patient list and return the list of patients
-    # i don't actually use this in this example
-    def get_patient_list(self):
-        return self.patients
-
+    # get patients
+    # used to display information about all patients currently stored in a list within the class.
+    # use for loop to iterate through each person in the list and print them out as they are found
+    def get_patients(self):
+        for person in self.patients:
+            print(person)
 
 # the main trick:
 if __name__ == "__main__":

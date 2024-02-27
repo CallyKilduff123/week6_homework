@@ -14,7 +14,7 @@ clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
 
 # remove a patient from the list using their name only
 clinic.remove_patients("Dory", "Fisherton")
-clinic.get_patient_list()
+clinic.get_patients()
 
 # Continue adding patients as before, including the category_key in the arguments
 

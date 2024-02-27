@@ -45,3 +45,51 @@ Condition:        Myopia
 Refractive patient. Investigations: VA--Orthoptics--Refraction
 Prescribe Cyclopentolate 1%
 ------------------------------------
+DNA Dory Fisherton: unable to attend appointment.
+CLINIC LIST:
+
+------------------------------------
+Firstname:        Elsa
+Lastname:         Agnarrsdottir
+Age:              20 years
+Condition:        Esotropia
+------------------------------------
+Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
+Prescribe Cyclopentolate 1%
+------------------------------------
+------------------------------------
+Firstname:        Ana
+Lastname:         Agnarrsdottir
+Age:              18 years
+Condition:        Esotropia
+------------------------------------
+Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
+Prescribe Cyclopentolate 1%
+------------------------------------
+------------------------------------
+Firstname:        Olaf
+Lastname:         Snowsson
+Age:              0 years
+Condition:        Optic nerve hypoplasia
+------------------------------------
+Posterior segment patient. Investigations: VA--Orthoptics--Dilate--OCT--OPTOS--Doctor
+Prescribe Cyclopentolate 0.5%
+------------------------------------
+------------------------------------
+Firstname:        Kristoff
+Lastname:         Hansson
+Age:              22 years
+Condition:        Arc eye
+------------------------------------
+Anterior segment patient. Investigations: VA--Doctor
+No dilation required
+------------------------------------
+------------------------------------
+Firstname:        Mirabel
+Lastname:         Madrigal
+Age:              14 years
+Condition:        Myopia
+------------------------------------
+Refractive patient. Investigations: VA--Orthoptics--Refraction
+Prescribe Cyclopentolate 1%
+------------------------------------
