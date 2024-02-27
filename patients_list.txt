@@ -7,6 +7,7 @@ Age:              20 years
 Condition:        Esotropia
 ------------------------------------
 Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
+Prescribe Cyclopentolate 1%
 ------------------------------------
 ------------------------------------
 Firstname:        Ana
@@ -15,14 +16,16 @@ Age:              18 years
 Condition:        Esotropia
 ------------------------------------
 Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
+Prescribe Cyclopentolate 1%
 ------------------------------------
 ------------------------------------
 Firstname:        Olaf
 Lastname:         Snowsson
-Age:              3 years
+Age:              1 years
 Condition:        Optic nerve hypoplasia
 ------------------------------------
 Posterior segment patient. Investigations: VA--Orthoptics--Dilate--OCT--OPTOS--Doctor
+Prescribe Cyclopentolate 0.5%
 ------------------------------------
 ------------------------------------
 Firstname:        Kristoff
@@ -31,6 +34,7 @@ Age:              22 years
 Condition:        Arc eye
 ------------------------------------
 Anterior segment patient. Investigations: VA--Doctor
+No dilation required
 ------------------------------------
 ------------------------------------
 Firstname:        Mirabel
@@ -39,90 +43,5 @@ Age:              14 years
 Condition:        Myopia
 ------------------------------------
 Refractive patient. Investigations: VA--Orthoptics--Refraction
-------------------------------------
-DNA Dory Fisherton: unable to attend appointment.
-CLINIC LIST:
-
-------------------------------------
-Firstname:        Elsa
-Lastname:         Agnarrsdottir
-Age:              20 years
-Condition:        Esotropia
-------------------------------------
-Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Ana
-Lastname:         Agnarrsdottir
-Age:              18 years
-Condition:        Esotropia
-------------------------------------
-Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Olaf
-Lastname:         Snowsson
-Age:              3 years
-Condition:        Optic nerve hypoplasia
-------------------------------------
-Posterior segment patient. Investigations: VA--Orthoptics--Dilate--OCT--OPTOS--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Kristoff
-Lastname:         Hansson
-Age:              22 years
-Condition:        Arc eye
-------------------------------------
-Anterior segment patient. Investigations: VA--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Mirabel
-Lastname:         Madrigal
-Age:              14 years
-Condition:        Myopia
-------------------------------------
-Refractive patient. Investigations: VA--Orthoptics--Refraction
-------------------------------------
-DNA Dory Fisherton: unable to attend appointment.
-CLINIC LIST:
-
-------------------------------------
-Firstname:        Elsa
-Lastname:         Agnarrsdottir
-Age:              20 years
-Condition:        Esotropia
-------------------------------------
-Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Ana
-Lastname:         Agnarrsdottir
-Age:              18 years
-Condition:        Esotropia
-------------------------------------
-Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Olaf
-Lastname:         Snowsson
-Age:              3 years
-Condition:        Optic nerve hypoplasia
-------------------------------------
-Posterior segment patient. Investigations: VA--Orthoptics--Dilate--OCT--OPTOS--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Kristoff
-Lastname:         Hansson
-Age:              22 years
-Condition:        Arc eye
-------------------------------------
-Anterior segment patient. Investigations: VA--Doctor
-------------------------------------
-------------------------------------
-Firstname:        Mirabel
-Lastname:         Madrigal
-Age:              14 years
-Condition:        Myopia
-------------------------------------
-Refractive patient. Investigations: VA--Orthoptics--Refraction
+Prescribe Cyclopentolate 1%
 ------------------------------------

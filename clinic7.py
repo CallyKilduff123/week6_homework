@@ -1,5 +1,7 @@
 # iteration 7 - current iteration
-# did not inherit patient to list - kept seperate
+# did not inherit patient to list - kept separate - used composition instead? 'has a' relationship
+# patient list is not a specialised version of patient, rather patient list has a collection of patients
+# added prescription option to prescribe dilating drops based on category key and age
 
 
 # TODO - create a clinic list
@@ -26,7 +28,7 @@ class Patient:
         self.age = age
         self.condition = condition
         self.category_key = category_key
-    #     category key is to store the category
+    #     category key is to store the category, so you can call the key and get the value
 
         self.category = {
             'S': 'Strabismus patient. Investigations: VA--Orthoptics--Dilate--Refraction--Doctor',
@@ -34,6 +36,16 @@ class Patient:
             'A': 'Anterior segment patient. Investigations: VA--Doctor',
             'P': 'Posterior segment patient. Investigations: VA--Orthoptics--Dilate--OCT--OPTOS--Doctor'}
 
+    # prescribe drops method: aim to prescribe dilating drops based on age and category
+    # anterior segment patients don't need them and under 2 need 0.5% instead of 1%
+    # use if and else statements and return the response so that it can be included in the formatted string
+    def prescribe_drops(self):
+        if self.age <= 2 and self.category_key in ["S", "R", "P"]:
+            return "Prescribe Cyclopentolate 0.5%"
+        elif self.category_key == "A":
+            return "No dilation required"
+        else:
+            return "Prescribe Cyclopentolate 1%"
     # the __str__ method returns a string representation of the Patient object.
     # It's called automatically when you print the object or convert it to a string.
     # in the first iteration it just returned a string of patient details sep by lines
@@ -56,13 +68,15 @@ class Patient:
         # The get() method returns the value of the item with the specified key in a dictionary
         # dictionary.get(keyname, value) -keyname is compulsory and value is optional - default is None if no key
         investigation_line = self.category.get(self.category_key)
+        prescription = self.prescribe_drops()
 
         # Combine all lines
         formatted_entry = (f"------------------------------------"
                            f"\n{firstname_line}\n{lastname_line}"
                            f"\n{age_line}\n{condition_line}\n"
                            f"------------------------------------\n"
-                           f"{investigation_line}\n"
+                           f"{investigation_line}\n{prescription}\n"
+                           
                            f"------------------------------------")
         # return = used within a function to exit the function and pass back a value to the caller.
         # terminates funciton immediately
@@ -143,7 +157,7 @@ if __name__ == "__main__":
     # use add patients method in List class to add patients to the patient list (stored in clinic variable)
     clinic.add_patients("Elsa", "Agnarrsdottir", 20, "Esotropia", 'S')
     clinic.add_patients("Ana", "Agnarrsdottir", 18, "Esotropia", "S")
-    clinic.add_patients("Olaf", "Snowsson", 3, "Optic nerve hypoplasia", "P")
+    clinic.add_patients("Olaf", "Snowsson", 0, "Optic nerve hypoplasia", "P")
     clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
     clinic.add_patients("Kristoff", "Hansson", 22, "Arc eye", "A")
     clinic.add_patients("Mirabel", "Madrigal", 14, "Myopia", "R")

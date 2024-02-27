@@ -1,13 +1,13 @@
 from clinic7 import List
 from clinic7 import Patient
 
-clinic = List(firstname=(), lastname=(), age=(), condition=(), category_key=())
+clinic = List()
 patient = Patient(firstname=(), lastname=(), age=(), condition=(), category_key=())
 
 # add patients to the list with a category key for their investigations
 clinic.add_patients("Elsa", "Agnarrsdottir", 20, "Esotropia", 'S')
 clinic.add_patients("Ana", "Agnarrsdottir", 18, "Esotropia", "S")
-clinic.add_patients("Olaf", "Snowsson", 3, "Optic nerve hypoplasia", "P")
+clinic.add_patients("Olaf", "Snowsson", 1, "Optic nerve hypoplasia", "P")
 clinic.add_patients("Kristoff", "Hansson", 22, "Arc eye", "A")
 clinic.add_patients("Mirabel", "Madrigal", 14, "Myopia", "R")
 clinic.add_patients("Dory", "Fisherton", 47, "Exotropia", "S")
